@@ -68,9 +68,3 @@ def BE_Fetch_data():
   df.to_csv(f'Logs/Log_{datetime.now().strftime("%b-%d-%Y_%H:%M:%S")}.csv')
 #   print("...Filtering done")
   return update_overall, total_overall
-
-def BE_Index(request):
-    global total_pages, total_responses, data
-    total_pages, total_responses, data = initialise()
-    update_overall, total_overall = BE_Fetch_data()
-    return "Total Response: " + total_overall + "Updated Response: " + update_overall
