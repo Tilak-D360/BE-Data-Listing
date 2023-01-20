@@ -2,3 +2,4 @@ functions-framework==3.*
 pandas
 validators
 datetime
+requests
