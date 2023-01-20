@@ -66,12 +66,11 @@ def BE_Fetch_data():
     print('Page: ', res.json()["data"]["curr_page_num"], 'Total: ', total, 'Update: ' , update)
 
   df.to_csv(f'Logs/Log_{datetime.now().strftime("%b-%d-%Y_%H:%M:%S")}.csv')
-  print("...Filtering done")
+#   print("...Filtering done")
   return update_overall, total_overall
 
-if __name__ == "__main__":
+def BE_Index(request):
     global total_pages, total_responses, data
     total_pages, total_responses, data = initialise()
     update_overall, total_overall = BE_Fetch_data()
-    print("Total Response: " , total_overall)
-    print("Updated Response: " , update_overall)
+    return "Total Response: " + total_overall + "Updated Response: " + update_overall
