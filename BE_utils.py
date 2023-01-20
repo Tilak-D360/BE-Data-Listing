@@ -27,8 +27,8 @@ def initialise():
     #  ↪ total_page_num
     #  ↪ v360_links -> list which contains all required data in dictionary form
 
-    print("Total Response : ", total_responses)
-    print("Total Page Num : ", total_pages)
+#     print("Total Response : ", total_responses)
+#     print("Total Page Num : ", total_pages)
 
     data = response.json()['data']['v360_links'][0]
     # Required data with fields
