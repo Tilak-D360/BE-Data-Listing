@@ -18,6 +18,7 @@ def BE_Store_data(df, data, category):
   # listing for dataframe
   pd.concat([df, pd.Series([
       data['certificate_number'],
+      data['vendor_name'],
       data['v360_link'],
       data['create_date'],
       data['download_status'],
@@ -43,8 +44,10 @@ def BE_Fetch_page(page, df):
 def BE_Fetch_data():
   df = pd.DataFrame(columns=[
       'certificate_number',
+      'vendor_name'
       'v360_link',
       'create_date',
+      
       'download_status',
       'active_status',
       'colored_diamonds',

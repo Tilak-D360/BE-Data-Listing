@@ -8,6 +8,7 @@ DATA = {
 }
 HEADERS = {'AUTH-TOKEN': 'TElWRV9WMzYwX0xJTktfSlNPTl9UT0tFTg=='}
 CATEGORIES = ('no_update', 'resync_needY', 'activeY_downloadN', 'activeN_downloadN_coloredDiamondY')
+URL_SET = set()
 
 import requests
 def initialise():
