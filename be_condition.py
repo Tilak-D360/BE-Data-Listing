@@ -1,8 +1,8 @@
-# BE Condition
+# BE_Condition
 
-from BE_utils import CATEGORIES 
+from be_utils import CATEGORIES 
 
-def BE_Filter(data):
+def BE_filter(data):
   if(data["resync_need"] == 'Y'):
     return CATEGORIES[1]
   
